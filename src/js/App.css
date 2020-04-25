@@ -1,0 +1,155 @@
+//add css reset
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.login-page {
+  margin: 20px;
+  background-color: #efefef;
+}
+
+.login-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-details {
+  background: #c9daf9;
+  padding: 20px;
+  margin: 10px;
+}
+
+input,
+textarea,
+button {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  min-width: 300px;
+  margin: 10px 0;
+}
+
+button,
+input[type="submit"] {
+  background: #94c47c;
+  cursor: pointer;
+  width: 100%;
+}
+
+.side-bar {
+  position: fixed;
+  width: 300px;
+  background: #88c6fc;
+  height: 100%;
+}
+
+.side-bar .application-logo {
+  padding: 40px 20px;
+  text-align: center;
+  background: #088cff;
+}
+
+#mainPanel {
+  margin-left: 300px;
+}
+
+.header {
+  padding: 0px;
+  background: #6f9cd8;
+  height: 50px;
+}
+
+.container {
+  padding: 0px;
+  background: #efefef;
+  min-height: calc(100vh - 50px);
+}
+
+.users-page-content {
+  min-height: 100vh;
+}
+
+.form-container {
+  width: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container .form-details {
+  background: white;
+}
+
+.users-list-container {
+  width: 50%;
+  background: #c2e1fe;
+  padding: 50px 20px;
+}
+
+.users-list-container .users-list {
+  background: #f6f6f6;
+  margin: 30px;
+  padding: 50px;
+}
+
+.users-list-container .users-list .users-list-item {
+  display: flex;
+  justify-content: center;
+}
+
+.users-list-container .users-list .users-list-item .name {
+  display: inline-block;
+  min-width: 300px;
+  background: white;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.users-list-container .users-list .users-list-item .actions  img {
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.users-page-content {
+  display: flex;
+}
+
+.loader {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #3498db;
+  width: 16px;
+  height: 16px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
